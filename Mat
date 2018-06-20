@@ -1,0 +1,39 @@
+def valid_inputs(A, B):
+  if type != list or type(B) != list:
+    return False
+  if len(A) == 0 or len(B) ==0:
+    return False
+  if type(A[0]) != list or type(B[0]) != list:
+    return False
+
+  colA = len(A[0])
+  
+  colB = len(B[0])
+
+  rowB = len(B)
+
+  for row in range(colA):
+    if type(A[row]) != list or len(A[row]) != colA:
+      return False
+  for row in range(colB):
+    if type(B[row]) != list or len(B[row]) != colB:
+      return False
+  if colA != rowB:
+    return False
+  return True
+  
+def mat_mat_mul(A,B):
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  if not valid_inputs(A,B):
+    print("Invalid Input")
