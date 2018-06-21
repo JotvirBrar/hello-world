@@ -37,3 +37,25 @@ def mat_mat_mul(A,B):
   
   if not valid_inputs(A,B):
     print("Invalid Input")
+    
+    
+    
+    
+    
+    def is_symmetric(A):  
+  """This function returns True if A is symmetric (transpose(A) = A, and False if A is not symmetric. First method checks to see if A is a valid matrix. Then iterate through the matrix, making sure for A[i][j] = A[j][i] for all i,j.
+  """  
+  if type(A) != list or type(A[0]) != list:
+    return False
+  num_rows = len(A)
+  for i in range(len(A)):
+    if type(A[i]) != list or len(A[i]) != num_rows:
+      return False
+  
+  for i in range(num_rows):
+    for j in range(num_rows):
+      if A[i][j] != A[j][i]
+
+  return True
+
+sym_matrix = 
